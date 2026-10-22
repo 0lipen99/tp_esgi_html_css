@@ -1,0 +1,108 @@
+@media screen and (max-width: 1150px) {
+    main,
+    .pied-colonnes {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grille {
+        justify-content: center;
+    }
+
+    .carte {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .presentation-contenu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .presentation-contenu img {
+        width: 100%;
+    }
+
+    .points-forts-contenu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .points-forts-contenu article {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header,
+    header nav ul,
+    .points-forts-contenu,
+    .contact,
+    .pied-colonnes {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        align-items: center;
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    main,
+    .pied-colonnes {
+        width: 90%;
+    }
+
+    .banniere {
+        padding: 40px 16px;
+    }
+
+    .banniere h1 {
+        font-size: 2em;
+    }
+
+    .presentation-contenu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .presentation-contenu img {
+        width: 100%;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .points-forts-contenu article {
+        flex-basis: 100%;
+    }
+
+    .contact .formulaire {
+        order: 1;
+    }
+
+    .contact .coordonnees {
+        order: 2;
+    }
+
+    .formulaire {
+        width: 100%;
+    }
+
+    .champ input,
+    .champ select,
+    .champ textarea {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}

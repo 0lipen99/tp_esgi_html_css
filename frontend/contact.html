@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Contact - Apple</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/apple-logo.webp" alt="Logo Apple">
+            <span>Apple</span>
+        </a>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactez-nous</h1>
+        <section class="contact">
+            <div class="coordonnees">
+                <h2>Apple Confluence</h2>
+                <p>Centre commercial Confluence<br>112 cours Charlemagne<br>69002 Lyon</p>
+                <p>Téléphone : <a href="tel:+33437231500">04 37 23 15 00</a></p>
+                <p>E-mail : Apple ne publie pas d’adresse générale pour ce magasin. Utilisez la <a href="https://www.apple.com/fr/contact/" target="_blank" rel="noopener">page officielle de contact Apple</a>.</p>
+                <h2>Horaires d’ouverture</h2>
+                <ul>
+                    <li>Lundi : 10 h - 20 h</li>
+                    <li>Mardi : 10 h - 20 h</li>
+                    <li>Mercredi : 10 h - 20 h</li>
+                    <li>Jeudi : 10 h - 20 h</li>
+                    <li>Vendredi : 10 h - 20 h</li>
+                    <li>Samedi : 10 h - 20 h</li>
+                    <li>Dimanche : fermé</li>
+                </ul>
+                <p>Horaires indicatifs : vérifiez-les avant votre déplacement.</p>
+                <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Apple+Confluence+Lyon" target="_blank" rel="noopener">Voir sur le plan</a></p>
+            </div>
+
+            <form class="formulaire" action="traitement.php" method="post">
+                <h2>Formulaire de contact</h2>
+                <div class="champ">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="champ">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="champ">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="champ">
+                    <label for="telephone">Téléphone (facultatif)</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+                <div class="champ">
+                    <label for="objet">Objet de la demande</label>
+                    <select id="objet" name="objet" required>
+                        <option value="">Choisir un objet</option>
+                        <option value="renseignement">Renseignement sur un produit</option>
+                        <option value="commande">Commande et achat</option>
+                        <option value="reparation">Réparation et assistance</option>
+                    </select>
+                </div>
+                <div class="champ">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <div class="case-a-cocher">
+                    <input type="checkbox" id="accord" name="accord" required>
+                    <label for="accord">J’accepte que mes données soient utilisées pour me recontacter.</label>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="pied-colonnes">
+            <section>
+                <h2>Adresse</h2>
+                <p>Apple Confluence<br>Centre commercial Confluence<br>112 cours Charlemagne<br>69002 Lyon</p>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Apple+Confluence+Lyon" target="_blank" rel="noopener">Voir sur le plan</a>
+            </section>
+            <section>
+                <h2>Horaires</h2>
+                <ul>
+                    <li>Lundi au samedi : 10 h - 20 h</li>
+                    <li>Dimanche : fermé</li>
+                    <li>Horaires susceptibles de changer les jours fériés.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Informations</h2>
+                <ul>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                    <li><a href="https://www.apple.com/fr/legal/">Mentions légales</a></li>
+                    <li><a href="propos.html">A Propos</a></li>
+                </ul>
+                <p>&copy; 2026 Apple</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
